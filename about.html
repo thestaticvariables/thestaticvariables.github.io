@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Horton Plains</title>
   <meta charset="UTF-8">
@@ -10,7 +11,7 @@
 </head>
 <style>
   header {
-    background-image:url("CSS/home.jpg");
+    background-image: url("CSS/abt.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -27,15 +28,16 @@
     align-items: center;
     flex-flow: column;
   }
-  </style>
+</style>
 <!-- © Static Varibles™. It's Not A Bug, It's A Feture -->
+
 <body>
 
   <!-- Do not change -->
-  
 
-   <!-- prelorder start  -->
-   <div class="loader">
+
+  <!-- prelorder start  -->
+  <div class="loader">
     <div class="sk-circle">
       <div class="sk-circle1 sk-child"></div>
       <div class="sk-circle2 sk-child"></div>
@@ -55,18 +57,18 @@
 
   <!-- prelorder end  -->
 
-<!-- Nav Bar -->
+  <!-- Nav Bar -->
   <nav id="navbar">
 
     <lable class="logo">
       <p style="">Horton Plains</p>
     </lable>
     <ul class="menu">
-      <li><a href="">Home</a></li>
-      <li><a href="#">Information </a></li>
-      <li><a href="#">Locations</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Information </a></li>
+      <li><a href="Locations.html">Locations</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 
@@ -74,7 +76,8 @@
   <header>
     <center>
       <div id="banner">
-        <h1 style="color:#bdc3c7; font-family:'Bungee', cursive; ">Horton <span style="color:#1abc9c;">Plains</span></h1><br>
+        <h1 style="color:#bdc3c7; font-family:'Bungee', cursive; font-size: 120px; ">Horton <span
+            style="color:#1abc9c;">Plains</span></h1><br>
     </center>
     </div>
   </header>
@@ -84,7 +87,7 @@
   <script type="text/javascript">
     var lastScrollTop = 0;
     navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       var scrollTop = window.pageYOffset || document
         .documentElement.scrollTop;
 
@@ -96,7 +99,7 @@
       lastScrollTop = scrollTop;
     })
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       let header = document.querySelector('header');
       let windowPosition = window.scrollY > 0;
       header.classList.toggle('scrolling-active', windowPosition);
@@ -108,39 +111,47 @@
 
 
 
-<!-- Start of Async Drift Code -->
-<script>
-  "use strict";
-  
-  !function() {
-    var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n = Array.prototype.slice.call(arguments);
-          return n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-      };
-    }
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('9fsafdw8dgue');
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    ! function () {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide",
+            "off", "on"
+          ],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5,
+              n = Math.ceil(new Date() / e) * e,
+              o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
+              "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('9fsafdw8dgue');
   </script>
   <!-- End of Async Drift Code -->
 
   <!-- Do not change -->
 
-
+<div class="box">
+  
+</div>
 
 
 </body>
+
 </html>
