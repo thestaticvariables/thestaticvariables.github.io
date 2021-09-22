@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS\style.css">
+  
 </head>
 <style>
   header {
@@ -56,7 +57,79 @@
   <script src="JS\pre.js" charset="utf-8"></script>
 
   <!-- prelorder end  -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name">Horton Plains</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+     
+      <li>
+        <a href="index.html">
+          <i class='bx bxs-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="info.html">
+          <i class='bx bx-info-circle' ></i>
+          <span class="links_name">Information</span>
+        </a>
+        <span class="tooltip">Information</span>
+      </li>
+      <li>
+        <a href="Locations.html">
+          <i class='bx bx-location-plus' ></i>
+          <span class="links_name">Locations</span>
+        </a>
+        <span class="tooltip">Locations</span>
+      </li>
+      <li>
+        <a href="Gallery.html">
+          <i class='bx bx-photo-album' ></i>
+          <span class="links_name">Gallery</span>
+        </a>
+        <span class="tooltip">Gallery</span>
+      </li>
+      <li>
+        <a href="about.html">
+          <i class='bx bxs-user' ></i>
+          <span class="links_name">About</span>
+        </a>
+        <span class="tooltip">About</span>
+      </li>
+      <li>
+        
+     
+    </ul>
+  </div>
 
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+      }
+    }
+  </script>
   <!-- Nav Bar -->
   <nav id="navbar">
 
@@ -169,7 +242,7 @@
 
           <span style="text-align: left;";><p style="text-align: left;"> sheer precipice of World's End and Baker's Falls are among the tourist attractions of the park.</span>
 
-          <img src="Images\info_1.jpg" width=97% style="border-radius: 1rem; ">
+          <img src="Images\info_1.jpg" width=97% style="border-radius: 1rem; padding: 10px;">
           <p><br>
             <div class="more"><a href="info.html"> More info </a></div>
       </div>
@@ -188,7 +261,7 @@
       <p style="font-family:'Poppins', sans-serif; color:#ecf0f1; font-size: .9rem; text-align: center;">Team: Static Variables.<br>
         It's not a bug, It's a future<br>
         @Copyright 2022 All rigths reserved Team-Static Variables.</p>
-    </b><br><a href="mailto:thestaticvariablesteam@gmail.com">thestaticvariables@gmail.com</a>
+    </b><br><a href="mailto:thestaticvariablesteam@gmail.com">thestaticvariablesteam@gmail.com</a>
   </footer>
 
 </body>

@@ -110,7 +110,79 @@
     })
   </script>
   <!-- Nav hide -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name">Horton Plains</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+     
+      <li>
+        <a href="index.html">
+          <i class='bx bxs-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="info.html">
+          <i class='bx bx-info-circle' ></i>
+          <span class="links_name">Information</span>
+        </a>
+        <span class="tooltip">Information</span>
+      </li>
+      <li>
+        <a href="Locations.html">
+          <i class='bx bx-location-plus' ></i>
+          <span class="links_name">Locations</span>
+        </a>
+        <span class="tooltip">Locations</span>
+      </li>
+      <li>
+        <a href="Gallery.html">
+          <i class='bx bx-photo-album' ></i>
+          <span class="links_name">Gallery</span>
+        </a>
+        <span class="tooltip">Gallery</span>
+      </li>
+      <li>
+        <a href="about.html">
+          <i class='bx bxs-user' ></i>
+          <span class="links_name">About</span>
+        </a>
+        <span class="tooltip">About</span>
+      </li>
+      <li>
+        
+     
+    </ul>
+  </div>
 
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+      }
+    }
+  </script>
   <!-- Nav Bar -->
 
 
@@ -168,7 +240,7 @@
         island. Horton Plains is not merely a destination for nature tourists. Since the rich biodiversity of Horton
         Plains is still grossly underexplored, it affords invaluable opportunities to those engaged on educational and
         research activities. Protecting Horton Plains is a call of duty for all Sri Lankans.
-        <img src="Images\nature_1.jpg" style="float:left; width:50%; padding: 10px; border-radius:1rem;">
+        <img src="Images\nature_1.jpg" style="float:left; width:50%; padding: 10px; border-radius:1rem; padding: 10px;">
         <br><br>Climate of Horton Plains is that of a wet Montane forest. The average annual temperature of 14-16⁰
         Centigrade while the humidity is relatively low at 65%. Though annual rainfall of the highlands is about 2540mm,
         Horton Plains records over 5000 mm of rainfall annually.During the dry season, the temperature drops to around
@@ -218,7 +290,7 @@
         Thrush, Brown-capped Babbler, Sri Lanka Spur-fowl and Sri Lanka Jungle-fowl. Other highlights are the
         Himalayan migrants Pied Thrush, Kashmir Flycatcher Indian Pitta. Black Bird, Mountain Hawk Eagle, Black Eagle,
         Jerdon’s Baza, Pied Bushchat, Hill Swallow and Hill Munia.
-        <br><br> <img src="Images\wild_1.jpg" style="float:right; width:50%; padding: 10px; border-radius:1rem;">
+        <br><br> <img src="Images\wild_1.jpg" style="float:right; width:50%; padding: 10px; border-radius:1rem; padding: 10px;">
         Now the Horton Plains has become a happy field of herds of Sambar Deer. However the growth population of
         Sambar Deer has resulted in the increase of number of Leopards. Wild Boar, the endemic Bear Monkey and Toque
         Monkey, Slender Loris, Fishing cat, Otter, Barking deer, Strip-necked Mongoose, Long-tailed Giant Squirrel are
@@ -252,7 +324,7 @@
         It's not a bug, It's a future<br>
         @Copyright 2022 All rigths reserved Team-Static Variables.</p>
       <br>
-      <a href="mailto:thestaticvariablesteam@gmail.com">thestaticvariables@gmail.com</a>
+      <a href="mailto:thestaticvariablesteam@gmail.com">thestaticvariablesteam@gmail.com</a>
     </b>
 </body>
 
