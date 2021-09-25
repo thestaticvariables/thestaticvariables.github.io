@@ -10,8 +10,9 @@
 
 
 
-
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #212121;
@@ -71,6 +72,7 @@ a {
 ::-webkit-scrollbar {
   background: #3F3F3F;
   width: 9px;
+  
 }
 
 ::-webkit-scrollbar-track {
@@ -117,6 +119,10 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.margin .main .box .more:hover{
+  background-color: #5c5c5c;
+  cursor: url('pointer.png'), auto;
+}
 
 
 .box {
@@ -148,6 +154,8 @@ footer{
 img{
   padding: 10px;
   transition: .3s;
+  border-radius: .5rem;
+  border-radius: 1rem;
 }
 img:hover{
   filter: brightness(89%);
@@ -219,7 +227,7 @@ img:hover{
   background-color: #585858;
   text-decoration-color: aliceblue;
   border-radius: 0.5rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .download:hover{
@@ -231,7 +239,7 @@ img:hover{
 
 .photo{
   width: 200px;
-  border: 1px solid #f5f6fa;
+  
    border-radius: 50%;
    
  margin-left: auto;
@@ -243,9 +251,12 @@ img:hover{
    transform: scale(1.5);
  
  }
+
+
+
  .a {
    
-  
+  z-index: -1;
   float: left;
   margin-left: auto;
   margin-right: auto;
@@ -253,7 +264,7 @@ img:hover{
   box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
-  width: 33.3%;
+  width:  33.3%;
   background: rgba(44, 44, 44);
   padding: 1.25rem;
   text-align: left;
@@ -279,3 +290,49 @@ img:hover{
   z-index: 10;
 }
 
+.social{
+  transition: .2s;
+}
+
+.social:hover{
+  filter: brightness(65%);
+}
+
+
+.img_box{
+  float: left;
+  box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 29px 7px rgba(0,0,0,0.75);
+  width: auto;
+  background: rgba(44, 44, 44);
+  padding: 1.25rem;
+  text-align: left;
+  line-height: 2;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: rgb(255, 255, 255);
+  border-radius: 1.2rem;
+  font-family: 'Century Gothic', sans-serif;
+  margin: 5px;
+}
+
+
+.margin{
+  margin: 5%;
+}
+
+.margin {
+  padding: 2rem;
+}
+
+
+iframe{
+  border-radius: 1.5rem;
+}
+
+
+.k{
+  margin-left: 38%;
+}
